@@ -33,23 +33,23 @@ export default function WasteCalculator() {
   const [metaCampaign, setMetaCampaign] = useState<CampaignData>({
     name: "Meta Campaign",
     platform: 'meta',
-    monthlySpend: 0,
-    impressions: 0,
-    clicks: 0,
-    conversions: 0,
-    qualityCases: 0,
-    averageCaseValue: 0,
+    monthlySpend: 25000,
+    impressions: 2500000,
+    clicks: 12500,
+    conversions: 85,
+    qualityCases: 12,
+    averageCaseValue: 150000,
   });
 
   const [ctvCampaign, setCtvCampaign] = useState<CampaignData>({
     name: "CTV Campaign",
     platform: 'ctv',
-    monthlySpend: 0,
-    impressions: 0,
-    brandSearches: 0,
-    conversions: 0,
-    qualityCases: 0,
-    averageCaseValue: 0,
+    monthlySpend: 25000,
+    impressions: 1800000,
+    brandSearches: 3200,
+    conversions: 156,
+    qualityCases: 28,
+    averageCaseValue: 285000,
   });
 
   const [analysisResult, setAnalysisResult] = useState<WasteAnalysisResult | null>(null);
